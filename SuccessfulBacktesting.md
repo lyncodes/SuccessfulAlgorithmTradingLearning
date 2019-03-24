@@ -37,3 +37,28 @@ microstructure effects of the market and exchanges.
     - Using Survivorship Bias Free Dataset
     - Use More Recent Data
 - Cognitive Bias 
+  - more concerns the psychological tolerance about the drawdown amount and period
+## Exchange Issues
+- Order Types
+  - different exchange order can greatly affect the performance of the backtesting performance
+  
+  - two kinds of orders:
+    - market orders
+      - executes a trade immediately, irrespective of available prices
+    - limit orders
+      -  is essentially a queue of buy and sell orders at certain sizes and prices.
+- Price Consolidation
+  - cheap data such from the yahoo finance is not that good
+  - way out: higher frequency data or recive data from exchange directly
+- Shorting Constraints
+  - some equities are not available due to the lack of availabilit or due to amarket constraint        
+## Transaction Costs
+- Commission
+  - commission,fees,and taxes
+- Slippage
+  - different price between trading system decided do and actually do
+  - higher volatility, more slippage
+  - higher frequency, demanding shorter latency(time difference bewteen signal generation and execution)
+- Market Impact
+  - cost dute to the supply and demand dynamics of exchange
+  -  illiquid asset is likely to move the market
