@@ -108,9 +108,7 @@ class OrderEvent(Event):
               )   
 ```
 ``FillEvent``
-an order has been transacted, it generated a FillEvent
-
-describe the details information about the transaction
+an order has been transacted, it generated a FillEvent describe the details information about the transaction
 ```python
 class FillEvent(Event):
     """
@@ -157,3 +155,13 @@ class FillEvent(Event):
             commission = max(1.3, 0.008 * self.quantity)
         return commission
 ```
+
+## DataHandle
+event-driven system need data handler both for backtesting and living trading.
+
+several type of data handlers including:
+ - HistoricCSVDataHandler
+ - DataBaseDataHandler
+ - OnlineDataHandler
+ - MarketDataHandler
+ - others....
