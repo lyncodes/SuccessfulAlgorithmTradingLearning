@@ -50,10 +50,10 @@ class MarketEvent(Event):
     triggered by the datahandler which recieve data feed from vendor
     trigger the strategy to generating trading strategy
     """
-def __init__(self):
-"""
-Initialises the MarketEvent.
-"""
+  def __init__(self):
+  """
+  Initialises the MarketEvent.
+  """
     self.type = 'MARKET'
 
 ```
