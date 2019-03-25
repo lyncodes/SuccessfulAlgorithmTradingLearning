@@ -51,9 +51,9 @@ class MarketEvent(Event):
     trigger the strategy to generating trading strategy
     """
   def __init__(self):
-  """
-  Initialises the MarketEvent.
-  """
-    self.type = 'MARKET'
+      """
+      Initialises the MarketEvent.
+      """
+        self.type = 'MARKET'
 
 ```
