@@ -3,7 +3,8 @@ class Event(object):
     Event is base class,which will be inherited in the latter specified deritive
     Event
     """
-    pass
+    def __init__(self):
+        self.type = ''
 
 
 class MarketEvent(Event):
@@ -29,7 +30,7 @@ class SignalEvent(Event):
         :param strategy_id:the unique identifier for the strategy
         :param symbol: the ticker symbol e.g. 'GOOG' 'rb1905'
         :param datetime: the timestamp which the signal was generated
-        :param signal_type: 'LONG' or 'SHORT'
+        :param signal_type: 'LONG' or 'SHORT' or 'EXIT'
         :param strength: scale the quantity at the portfolio level
         """
         self.type = 'SIGNAL'
